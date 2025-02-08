@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A website using machine learning to predict heart disease risk based on medical attributes like age, blood pressure, and cholesterol.">
+    <title>Heart Disease Risk Prediction</title>
+    <link rel="stylesheet" href="\static\css\styles.css">
+</head>
+
+<head>
+    <!-- Other head content -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#page1">Home</a></li>
+            <li><a href="#page2">About Us</a></li>
+            <li><a href="#page3">Team Members</a></li>
+            <li><a href="#page4">Prediction Form</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page 1: Home -->
+    <section id="page1">
+        <video class="background-video" autoplay muted loop>
+            <source src="{{ url_for('static', filename='videos/heart.mp4') }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <div class="page1-content">
+            <h1>Heart Disease Risk Prediction Using Machine Learning Techniques</h1>
+        </div>
+    </section>
+
+    <!-- Page 2: About Us -->
+    <section id="page2">
+        <h2 class="section-title">About Us</h2>
+        <div class="cards-container">
+            <!-- Abstract Card -->
+            <div class="card abstract">
+                <h3>Abstract</h3>
+                <p>
+                    Heart disease is a leading global health concern, necessitating effective predictive systems for early detection. This project focuses on developing a machine learning-based model to assess heart disease risk by analyzing key medical attributes such as age, blood pressure, and cholesterol levels. Utilizing algorithms like Logistic Regression, Random Forest, and Decision Trees, the model achieved a prediction accuracy of 86.5%, outperforming traditional methods. By enabling early intervention and optimizing healthcare resources, this system enhances patient care and reduces costs. The project underscores the potential of machine learning in transforming healthcare, offering insights into heart disease risk factors for improved outcomes.
+                </p>
+            </div>
+            <!-- Mission Card -->
+            <div class="card mission">
+                <h3>Mission</h3>
+                <p>
+                    The mission of this project is to develop an accurate and efficient heart disease risk prediction model using machine learning algorithms. By analyzing medical attributes such as age, cholesterol levels, blood pressure, and chest pain type, the model identifies individuals at risk of heart disease, enabling early detection and intervention. Leveraging algorithms like Logistic Regression, Random Forest, and Decision Trees, the project aims to provide reliable predictions, support healthcare professionals in diagnosing patients, and optimize resource utilization. Ultimately, this initiative aspires to enhance patient outcomes, reduce healthcare costs, and contribute to the broader effort of combating heart disease globally.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 3: Member -->
+    <section id="page3">
+        <h2 class="section-title">Team Members</h2>
+        <div class="cards-container">
+            <!-- Member 1 -->
+            <div class="card">
+                <img src="https://media.licdn.com/dms/image/v2/D5603AQFnnE1EUmnDlA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1719006094220?e=1737590400&v=beta&t=AyJ0phbqG7XwTAWvTwea_PmIt8IgaywsC3O7AYnC0sg" alt="Anurag Gupta" class="team-member-image">
+                <h3>Anurag Gupta</h3>
+                <a href="https://www.linkedin.com/in/anurag-gupta-686391167/" target="_blank" aria-label="LinkedIn profile of Anurag Gupta">
+                    <i class="fab fa-linkedin"></i> 
+                </a>
+                <a href="https://github.com/anuragcs" target="_blank" aria-label="GitHub profile of Anurag Gupta">
+                    <i class="fab fa-github"></i> 
+                </a>
+            </div>
+            <!-- Member 2 -->
+            <div class="card">
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQExcxqYAqjRrw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1695800983666?e=1737590400&v=beta&t=bQ09mcNGeUgr_F-DB_WNK-VylWaFMGE27Fl-PpHiD8M" alt="Sahil Rawat" class="team-member-image">
+                <h3>Sahil Rawat</h3>
+                <a href="https://www.linkedin.com/in/rawatsahil341/" target="_blank" aria-label="LinkedIn profile of Sahil Rawat">
+                    <i class="fab fa-linkedin"></i> 
+                </a>
+                <a href="https://github.com/Sahil7771" target="_blank" aria-label="GitHub profile of Sahil Rawat">
+                    <i class="fab fa-github"></i> 
+                </a>
+            </div>
+            <!-- Member 3 -->
+            <div class="card">
+                <img src="https://media.licdn.com/dms/image/v2/C4D03AQFCzEYUfrA8Uw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1661397103951?e=1737590400&v=beta&t=P1P4XGqv38T2XiOzzmir6mO6FpniRaI95kOjyf0vUrE" alt="Nilesh Jha" class="team-member-image">
+                <h3>Nilesh Jha</h3>
+                <a href="https://www.linkedin.com/in/nj-nileshjha/" target="_blank" aria-label="LinkedIn profile of Nilesh Jha">
+                    <i class="fab fa-linkedin"></i> 
+                </a>
+                <a href="https://github.com/jhanilesh26" target="_blank" aria-label="GitHub profile of Nilesh Jha">
+                    <i class="fab fa-github"></i> 
+                </a>
+            </div>
+            <!-- Member 4 -->
+            <div class="card">
+                <img src="https://media.licdn.com/dms/image/v2/D5603AQEcWl-AnNje8A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1711348945946?e=1737590400&v=beta&t=wAT0jy79Vwi-5kCDd3bBTVlknHL4WbDvhy12A4v43ok" alt="Masoom Muskan" class="team-member-image">
+                <h3>Masoom Muskan</h3>
+                <a href="https://www.linkedin.com/in/masoom-muskan-364518239/" target="_blank" aria-label="LinkedIn profile of Masoom Muskan">
+                    <i class="fab fa-linkedin"></i> 
+                </a>
+                <a href="https://github.com/masoom1412" target="_blank" aria-label="GitHub profile of Masoom Muskan">
+                    <i class="fab fa-github"></i> 
+                </a>
+            </div>
+        </div>
+    </section>
+    
+
+<!-- Page 4: patient form -->
+<section id="page4">
+    <h2 class="section-title">Patient Information Form</h2>
+    <form id="patient-form" action="/predict" method="POST">
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" required title="Enter your age in years">
+        </div>
+
+        <div class="form-group">
+            <label for="sex">Sex:</label>
+            <select id="sex" name="sex" required>
+                <option value="">Select your gender</option>
+                <option value="1">Male</option>
+                <option value="0">Female</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="cp">Chest Pain Type:</label>
+            <select id="cp" name="cp" required>
+                <option value="">Select Chest Pain Type</option>
+                <option value="0">Typical Angina</option>
+                <option value="1">Atypical Angina</option>
+                <option value="2">Non-anginal Pain</option>
+                <option value="3">Asymptomatic</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="trestbps">Resting Blood Pressure (mm Hg):</label>
+            <input type="number" id="trestbps" name="trestbps" placeholder="Enter resting blood pressure" required title="Enter resting blood pressure in mm Hg">
+        </div>
+
+        <div class="form-group">
+            <label for="chol">Cholesterol (mg/dl):</label>
+            <input type="number" id="chol" name="chol" placeholder="Enter cholesterol level" required title="Enter cholesterol level in mg/dl">
+        </div>
+
+        <div class="form-group">
+            <label for="fbs">Fasting Blood Sugar (mg/dl):</label>
+            <select id="fbs" name="fbs" required>
+                <option value="">Select Fasting Blood Sugar</option>
+                <option value="0">Less than 120 mg/dl</option>
+                <option value="1">Greater than 120 mg/dl</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="restecg">Resting Electrocardiographic Results:</label>
+            <select id="restecg" name="restecg" required>
+                <option value="">Select Electrocardiographic Results</option>
+                <option value="0">Normal</option>
+                <option value="1">ST-T wave abnormality</option>
+                <option value="2">Left ventricular hypertrophy</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="thalach">Maximum Heart Rate Achieved:</label>
+            <input type="number" id="thalach" name="thalach" placeholder="Enter max heart rate" required title="Enter maximum heart rate achieved">
+        </div>
+
+        <div class="form-group">
+            <label for="exang">Exercise Induced Angina:</label>
+            <select id="exang" name="exang" required>
+                <option value="">Select Exercise Induced Angina</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="oldpeak">Oldpeak (Depression induced by exercise relative to rest):</label>
+            <input type="number" id="oldpeak" name="oldpeak" placeholder="Enter oldpeak value" step="0.1" required title="Enter oldpeak value">
+        </div>
+        <div class="form-group">
+            <label for="slope">Slope of the peak exercise ST segment:</label>
+            <select id="slope" name="slope" required>
+                <option value="">Select Slope</option>
+                <option value="0">Upsloping</option>
+                <option value="1">Flat</option>
+                <option value="2">Downsloping</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="ca">Number of major vessels colored by fluoroscopy:</label>
+            <input type="number" id="ca" name="ca" placeholder="Enter number of vessels" required min="0" max="3" title="Enter a number between 0 and 3">
+        </div>
+
+        <div class="form-group">
+            <label for="thal">Thalassemia:</label>
+            <select id="thal" name="thal" required>
+                <option value="">Select Thalassemia</option>
+                <option value="1">Normal</option>
+                <option value="2">Fixed defect</option>
+                <option value="3">Reversible defect</option>
+            </select>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+    <!-- JavaScript -->
+    <script src="\templates\script.js"></script>
+</body>
+</html>
